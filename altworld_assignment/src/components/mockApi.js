@@ -20,3 +20,5 @@ export const addCandidate = (newCandidate) => {
     }, 1000);
   });
 };
+
+export { fetchCandidates };

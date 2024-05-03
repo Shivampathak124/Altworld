@@ -38,22 +38,15 @@ function Assignment() {
 
   return (
     <div>
-      <h1>Assignment Page</h1>
+      <button onClick={handleAddCandidate}>Add Assignment</button>
+      <h3>Assignment Page</h3>
       <h2>Candidates</h2>
       <ul>
         {candidates.map((candidate) => (
           <li key={candidate.id}>{candidate.name}</li>
         ))}
       </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="Enter candidate name"
-          value={newCandidateName}
-          onChange={(e) => setNewCandidateName(e.target.value)}
-        />
-        <button onClick={handleAddCandidate}>Add Candidate</button>
-      </div>
+      
     </div>
   );
 }
